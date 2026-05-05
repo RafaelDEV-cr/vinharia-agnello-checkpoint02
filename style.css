@@ -1,0 +1,61 @@
+body { /* estilo geral da page */
+  font-family: Georgia, serif;
+  background-color: #FAF3E0;
+  color: #6d1111;
+  margin: 0;
+  padding: 20px;
+}
+
+header { /* estilo do cabeçalho */
+  text-align: center;
+  padding: 40px 0 20px;
+  border-bottom: 2px solid #6d1414;
+}
+
+header h1 { /* estilo do título */
+  font-size: 2.5em;
+  color: #500e0e;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+header p { /* estilo da descrição */
+  font-style: italic;
+  color: #502d12;
+  margin-top: 8px;
+}
+
+main { /* estilização do conteúdo principal */
+  max-width: 700px;
+  margin: 40px auto;
+  line-height: 1.8;
+}
+
+main h2 { /* estilização do subtítulo */
+  color: #7a2e2e;
+  border-left: 4px solid #7a2e2e;
+  padding-left: 12px;
+}
+
+main p { /* estilização dos parágrafos */
+  text-align: justify;
+  font-size: 1.05em;
+}
+
+.destaque { /* estilização do destaque */
+  background-color: #f0ddd0;
+  border: 1px solid #503111;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+footer { /* estilização do rodapé */
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.85em;
+  color: #8b5e3c;
+  border-top: 1px solid #492a0a;
+  padding-top: 16px;
+}
