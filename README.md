@@ -9,4 +9,5 @@ Erick Diego
 Julia Lopes 
 Rafael Morales
 
-
+Link do gitpages:
+https://rafaeldev-cr.github.io/vinharia-agnello-checkpoint02/
