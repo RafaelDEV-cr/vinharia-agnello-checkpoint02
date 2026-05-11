@@ -1,61 +1,96 @@
-body { /* estilo geral da page */
+/* Definição de Variáveis para facilitar a manutenção */
+:root {
+  --cor-fundo: #FAF3E0;
+  --cor-texto: #6d1111;
+  --cor-titulo: #500e0e;
+  --cor-subtitulo: #7a2e2e;
+  --cor-destaque-bg: #f0ddd0;
+  --cor-destaque-borda: #503111;
+  --cor-rodape: #8b5e3c;
+  --cor-linha-header: #6d1414;
+  --cor-linha-footer: #492a0a;
+}
+
+body {
   font-family: Georgia, serif;
-  background-color: #FAF3E0;
-  color: #6d1111;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
   margin: 0;
   padding: 20px;
+  line-height: 1.8;
+  /* Suavização de fonte para navegadores modernos */
+  -webkit-font-smoothing: antialiased;
 }
 
-header { /* estilo do cabeçalho */
+header {
   text-align: center;
   padding: 40px 0 20px;
-  border-bottom: 2px solid #6d1414;
+  border-bottom: 2px solid var(--cor-linha-header);
 }
 
-header h1 { /* estilo do título */
+header h1 {
   font-size: 2.5em;
-  color: #500e0e;
+  color: var(--cor-titulo);
   margin: 0;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-header p { /* estilo da descrição */
+header p {
   font-style: italic;
   color: #502d12;
   margin-top: 8px;
 }
 
-main { /* estilização do conteúdo principal */
+main {
   max-width: 700px;
   margin: 40px auto;
-  line-height: 1.8;
 }
 
-main h2 { /* estilização do subtítulo */
-  color: #7a2e2e;
-  border-left: 4px solid #7a2e2e;
+main h2 {
+  color: var(--cor-subtitulo);
+  border-left: 4px solid var(--cor-subtitulo);
   padding-left: 12px;
+  margin-top: 2em;
 }
 
-main p { /* estilização dos parágrafos */
+main p {
   text-align: justify;
   font-size: 1.05em;
+  /* Melhora o espaçamento do texto justificado */
+  hyphens: auto;
 }
 
-.destaque { /* estilização do destaque */
-  background-color: #f0ddd0;
-  border: 1px solid #503111;
+.destaque {
+  background-color: var(--cor-destaque-bg);
+  border: 1px solid var(--cor-destaque-borda);
   border-radius: 6px;
   padding: 16px 20px;
   margin-top: 30px;
   font-style: italic;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
 }
 
-footer { /* estilização do rodapé */
+footer {
   text-align: center;
   margin-top: 60px;
   font-size: 0.85em;
-  color: #8b5e3c;
-  border-top: 1px solid #492a0a;
+  color: var(--cor-rodape);
+  border-top: 1px solid var(--cor-linha-footer);
   padding-top: 16px;
+}
+
+/* Ajustes para dispositivos móveis (Responsividade) */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  
+  header h1 {
+    font-size: 1.8em;
+  }
+  
+  main {
+    margin: 20px auto;
+  }
 }
